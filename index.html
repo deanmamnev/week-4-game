@@ -6,7 +6,7 @@ We have survived week 2 of 12 of this Bootcamp.  My sanity is hanging on by a th
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Crystallic Crisis</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
     <!-- Added link to the jQuery Library -->
@@ -15,11 +15,12 @@ We have survived week 2 of 12 of this Bootcamp.  My sanity is hanging on by a th
     <!-- Added a link to Bootstrap-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <script src="assets/game.js"></script>
+
 </head>
 
-<body>
-    <div>
+<body id="bg">
+    <div id="summary">
+
         <h1>Crystallic Crisis</h1>
         <p>You will be given a random number at the start of the game.</p>
         <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
@@ -28,15 +29,54 @@ We have survived week 2 of 12 of this Bootcamp.  My sanity is hanging on by a th
         <p>The value of each crystal is hidden from you until you click on it.</p>
         <p>Each time the game starts, the game will change the value of each crystal.</p>
     </div>
-    
-    <div>
-        <!-- add image buttons here -->
+
+    <div id="numberdisplay">
+        <h1>Goal: </h1><h1 class="text-center" id="random-number"></h1>
     </div>
 
-    <script>
-// Check "assets/game.js"..
-    </script>
 
+
+
+
+    <div id="buttoncontainer">
+        <!-- add image buttons here -->
+        <!-- Done, awesome -->
+        <button id="crystal_1">
+            <img src="assets/images/crystal_1.png" class="button" alt="crystal_1" height="100" width="100">
+        </button>
+        <button id="crystal_2">
+            <img src="assets/images/crystal_2.png" class="button" alt="crystal_2" height="100" width="100">
+        </button>
+        <button id="crystal_3">
+            <img src="assets/images/crystal_3.png" class="button" alt="crystal_3" height="100" width="100">
+        </button>
+        <button id="crystal_4">
+            <img src="assets/images/crystal_4.png" class="button" alt="crystal_4" height="100" width="100">
+        </button>
+
+
+    </div>
+
+    <!-- Total Score -->
+
+    <div id="totalscore">
+        <h1>Total Score </h1><h1 class="text-center" id="total-number"></h1>
+
+    </div>
+
+    <div id="winslosses">
+            <h1>Wins</h1>
+            <h1 class="text-center" id="wins"></h1>
+            <h1>Losses</h1>
+            <h1 class="text-center" id="losses"></h1>
+        </div>
+
+    <script type="text/javascript">
+// Check "assets/game.js"..
+
+
+    </script>
+    <script src="assets/game.js"></script>
 </body>
 
 </html>
